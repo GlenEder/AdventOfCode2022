@@ -1,4 +1,19 @@
+def get_input_filepath(day):
+    """
+    Returns relative path to day's input file
+    """
+    return f'../../docs/inputs/day{day}.txt'
+
+def get_test_input_filepath(day):
+    """
+    Returns relative path to day's test input file
+    """
+    return f'../docs/testinputs/day{day}.txt'
+
 def parse_int(string):
+    """
+    Parses string to int, on error returns None
+    """
     try:
         return int(string)
     except ValueError:

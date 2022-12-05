@@ -1,7 +1,7 @@
 import unittest
-from src.utils.input_handler import parse_int
-from src.utils.input_handler import parse_comma_sep_int_list
-from src.utils.input_handler import parse_int_list
+from utils.io_handlers.input_handler import parse_int
+from utils.io_handlers.input_handler import parse_comma_sep_int_list
+from utils.io_handlers.input_handler import parse_int_list
 
 class TestInputHandler(unittest.TestCase):
 
