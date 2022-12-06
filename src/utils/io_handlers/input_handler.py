@@ -4,11 +4,13 @@ def get_input_filepath(day):
     """
     return f'../../docs/inputs/day{day}.txt'
 
+
 def get_test_input_filepath(day):
     """
     Returns relative path to day's test input file
     """
     return f'../docs/testinputs/day{day}.txt'
+
 
 def parse_int(string):
     """
@@ -18,6 +20,7 @@ def parse_int(string):
         return int(string)
     except ValueError:
         pass
+
 
 def parse_comma_sep_int_list(filepath):
     """
@@ -33,6 +36,7 @@ def parse_comma_sep_int_list(filepath):
     nums = [parse_int(i) for i in numStrs]
     return nums
 
+
 def parse_int_list(filepath):
     """
     Returns list of ints read from provided file
@@ -45,5 +49,10 @@ def parse_int_list(filepath):
     file.close()
     return nums
 
-        
 
+def get_string_list(filepath):
+    """
+    Returns readlines() list
+    """
+    file = open(filepath, "r")
+    return file.readlines()

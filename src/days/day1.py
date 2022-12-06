@@ -22,3 +22,4 @@ def day1(input_filepath):
 
 if __name__ == '__main__':
     day1(get_input_filepath(1))
+
